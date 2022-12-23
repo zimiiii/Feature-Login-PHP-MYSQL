@@ -7,14 +7,14 @@ if(isset($_POST['tambah'])){
     if(tambah($_POST)>0){
         echo "
         <script>
-        alert('data berhasil di daftarkan');
+        alert('Anda Berhasil Membuat Akun 😎');
         document.location.href = 'index.php';
         </script>
         ";
         }else{
             echo"
         <script>
-        alert('data gagal di daftarkan');
+        alert('Anda Gagal Membuat Akun 😜');
         document.location.href = 'registrasi.php';
         </script>
             ";
@@ -52,19 +52,30 @@ if(isset($_POST['tambah'])){
 <body>
     <div class="container">
         <form name="form" method="post">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
+            .bung
+            <div class="nama">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
             
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
             
-            <label for="password">Pasword</label>
-            <input type="text" name="password" id="password">
+            <div class="pw">    
+                <label for="password">Pasword</label>
+                <input type="password" name="password" id="password">
+            </div>
             
-            <label for="level">Level</label>
-            <input type="text" name="level" id="level">
+            <div class="lev">
+                <label for="level">Level</label>
+                <input type="text" name="level" id="level">
+            </div>
 
-            <button type="submit" name="tambah">SUBMIT</button>
+            <div class="sub">
+                <button type="submit" name="tambah">SUBMIT</button>
+            </div>
 
         </form>
 
